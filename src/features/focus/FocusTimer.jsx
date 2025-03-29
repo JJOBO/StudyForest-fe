@@ -6,7 +6,7 @@ import FocusControls from "./FocusControls";
 import "./FocusTimer.scss";
 
 function FocusTimer() {
-  const { id: studyId } = useParams();
+  const { studyId } = useParams();
   const [timeLeft, setTimeLeft] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);

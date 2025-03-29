@@ -45,30 +45,42 @@
   margin-top: 94px;
 }
 
-.button {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-
-  &:disabled {
-    cursor: default;
-    opacity: 0.6;
-  }
-}
-
+/* ▶ 일시정지 버튼 */
 .pause-btn {
   width: 64px;
   height: 64px;
   background-image: url("/src/assets/buttons/btn_pause/btn_pause_pc_active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
+/* ▶ 초기화 버튼 */
+.reset-btn {
+  width: 64px;
+  height: 64px;
+  background-image: url("/src/assets/buttons/btn_restart/btn_restart_pc_active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ▶ 시작/중지 버튼 */
 .start-btn {
   width: 333px;
   height: 60px;
   border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
 
   &.start {
     background-image: url("/src/assets/buttons/btn_start/btn_start_pc_active.svg");
@@ -77,15 +89,16 @@
   &.start.inactive {
     background-image: url("/src/assets/buttons/btn_start/btn_start_pc_inactive.svg");
     pointer-events: none;
+    cursor: default;
+    width: 333px;
+    height: 60px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &.stop {
     background-image: url("/src/assets/buttons/btn_stop/btn_stop_pc_active.svg");
   }
-}
-
-.reset-btn {
-  width: 64px;
-  height: 64px;
-  background-image: url("/src/assets/buttons/btn_restart/btn_restart_pc_active.svg");
 }

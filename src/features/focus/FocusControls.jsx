@@ -17,14 +17,14 @@ function FocusControls({
     <div className="controls">
       {isRunning && timeLeft > 0 && (
         <button
-          className="button pause-btn"
+          className="pause-btn"
           onClick={onClickPause}
           aria-label={isPaused ? "resume" : "pause"}
         />
       )}
 
       <button
-        className={`button start-btn ${hasCompleted ? "stop" : "start"} ${
+        className={`start-btn ${hasCompleted ? "stop" : "start"} ${
           isActive ? "inactive" : ""
         }`}
         onClick={hasCompleted ? onClickStop : onClickStart}
@@ -33,7 +33,7 @@ function FocusControls({
 
       {isRunning && timeLeft > 0 && (
         <button
-          className="button reset-btn"
+          className="reset-btn"
           onClick={onClickReset}
           aria-label="restart"
         />
